@@ -14,13 +14,13 @@
 #ifndef __DEBUG_H
 #define __DEBUG_H
 
-#include <Wire.h>
+#include <esp_log.h>
 
 #define USE_DEBUG 1
 #if USE_DEBUG
-	#define Debug(__info) Serial.print(__info)
+	#define Debug(__info) do {     ESP_LOGI("WAVESHARE", __info); } while(0)
 #else
-	#define Debug(__info)  
+	#define Debug(__info) do { } while(0)
 #endif
 
 #endif

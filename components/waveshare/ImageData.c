@@ -1,1 +1,1 @@
-epd1in54/ImageData.c
+epd1in54v2/ImageData.c

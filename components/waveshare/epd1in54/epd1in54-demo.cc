@@ -5,6 +5,11 @@
 #include "imagedata.h"
 #include <stdlib.h>
 
+#ifdef __cplusplus
+extern "C" {
+void setup();
+#endif
+
 /* Entry point ----------------------------------------------------------------*/
 void setup()
 {
@@ -120,3 +125,8 @@ void loop()
 {
   //
 }
+
+#ifdef __cplusplus
+}
+#endif
+

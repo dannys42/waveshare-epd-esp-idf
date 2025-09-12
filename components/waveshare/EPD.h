@@ -2,6 +2,11 @@
 #define __EPD_H_ 
 
 #include "utility/Debug.h"
+
+//#include "EPD_1in54.h"
+#include "EPD_1in54_V2.h"
+
+/*
 #include "utility/EPD_1in02.h"
 #include "utility/EPD_1in54.h"
 #include "utility/EPD_1in54_V2.h"
@@ -63,5 +68,6 @@
 #include "utility/EPD_7in5b_HD.h"
 #include "utility/EPD_13in3b.h"
 #include "utility/EPD_13in3k.h"
+*/
 
 #endif
