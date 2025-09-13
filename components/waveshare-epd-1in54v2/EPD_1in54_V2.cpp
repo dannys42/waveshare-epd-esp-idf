@@ -27,7 +27,7 @@
 # THE SOFTWARE.
 #
 ******************************************************************************/
-#include "epd1in54v2/EPD_1in54_V2.h"
+#include "epd-1in54v2/epd-1in54v2.h"
 #include "waveshare-epd/Debug.h"
 
 // waveform full refresh

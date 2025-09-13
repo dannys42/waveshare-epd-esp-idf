@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "epd_1in54_v2-demo/epd_1in54_v2-demo.h"
+#include "epd-1in54v2-demo/epd-1in54v2-demo.h"
 
 /* Entry point ----------------------------------------------------------------*/
 
