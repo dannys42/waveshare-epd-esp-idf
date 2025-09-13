@@ -36,8 +36,8 @@
   */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __FONTS_H
-#define __FONTS_H
+#ifndef __STM32XX_FONTS_EN_H
+#define __STM32XX_FONTS_EN_H
 
 
 /* Max size of bitmap will based on a font24 (17x24) */
@@ -92,7 +92,7 @@ extern sFONT Font8;
 }
 #endif
   
-#endif /* __FONTS_H */
+#endif /* __STM32XX_FONTS_EN_H */
  
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

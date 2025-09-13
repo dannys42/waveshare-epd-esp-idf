@@ -10,8 +10,8 @@ idf_component_register(SRCS "waveshare.c"
                     "GUI_Paint.cpp"
 
                     REQUIRES driver
+                    REQUIRES "stm32xx_fonts-en"
                     INCLUDE_DIRS "include"
-                    PRIV_REQUIRES "fonts"
                     )
 
 
