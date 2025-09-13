@@ -78,7 +78,6 @@
 #ifndef __GUI_PAINT_H
 #define __GUI_PAINT_H
 
-#include "utility/Debug.h"
 #include "DEV_Config.h"
 #include "fonts/stm32xx_fonts-en.h"
 

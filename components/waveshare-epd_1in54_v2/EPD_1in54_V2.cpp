@@ -27,8 +27,8 @@
 # THE SOFTWARE.
 #
 ******************************************************************************/
-#include "EPD_1in54_V2.h"
-#include "utility/Debug.h"
+#include "epd1in54v2/EPD_1in54_V2.h"
+#include "waveshare-epd/Debug.h"
 
 // waveform full refresh
 unsigned char WF_Full_1IN54[159] =

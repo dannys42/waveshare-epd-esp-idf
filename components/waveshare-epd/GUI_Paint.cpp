@@ -75,9 +75,9 @@
 * THE SOFTWARE.
 *
 ******************************************************************************/
-#include "GUI_Paint.h"
-#include "DEV_Config.h"
-#include "utility/Debug.h"
+#include "waveshare-epd/GUI_Paint.h"
+#include "waveshare-epd/DEV_Config.h"
+#include "waveshare-epd/Debug.h"
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h> //memset()
