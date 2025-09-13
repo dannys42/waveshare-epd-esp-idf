@@ -4,15 +4,10 @@
 #include "waveshare-epd/GUI_Paint.h"
 #include "imagedata.h"
 #include <stdlib.h>
-
-#ifdef __cplusplus
-extern "C" {
-    void setup();
-}
-#endif
+#include "epd_1in54_v2-demo/epd_1in54_v2-demo.h"
 
 /* Entry point ----------------------------------------------------------------*/
-void setup()
+void epd_1in54_v2_demo()
 {
   printf("EPD_1IN54_test v2 Demo\r\n");
   DEV_Module_Init();
@@ -127,8 +122,3 @@ void setup()
 
 }
 
-/* The main loop -------------------------------------------------------------*/
-void loop()
-{
-  //
-}

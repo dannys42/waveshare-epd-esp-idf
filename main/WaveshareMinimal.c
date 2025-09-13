@@ -1,13 +1,14 @@
 #include <stdio.h>
 
-void setup();
+#include "epd_1in54_v2-demo/epd_1in54_v2-demo.h"
+
+/* Entry point ----------------------------------------------------------------*/
 
 void app_main(void)
 {
     printf("* Start of WaveshareMinimal\n");
 
-    setup();
-
+    epd_1in54_v2_demo();
 
     printf("* Program complete\n");
 }
