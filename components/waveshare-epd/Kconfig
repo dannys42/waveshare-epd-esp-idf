@@ -1,0 +1,46 @@
+menu "Waveshare Epaper"
+
+    config WAVESHARE_EPAPER_GPIO_SCK
+    default 0
+    int "SCK GPIO"
+    range 0 100
+    help
+        SCK GPIO Pin number
+
+
+    config WAVESHARE_EPAPER_GPIO_MOSI
+    default 0
+    int "MOSI GPIO"
+    range 0 100
+    help
+        MOSI GPIO Pin number
+
+    config WAVESHARE_EPAPER_GPIO_CS
+    default 0
+    int "CS GPIO"
+    range 0 100
+    help
+        CS GPIO Pin number
+
+    config WAVESHARE_EPAPER_GPIO_RST
+    default 0
+    int "RST GPIO"
+    range 0 100
+    help
+        RST GPIO Pin number
+
+    config WAVESHARE_EPAPER_GPIO_DC
+    default 0
+    int "DC GPIO"
+    range 0 100
+    help
+        DC GPIO Pin number
+
+    config WAVESHARE_EPAPER_GPIO_BUSY
+    default 0
+    int "BUSY GPIO"
+    range 0 100
+    help
+        BUSY GPIO Pin number
+
+endmenu
