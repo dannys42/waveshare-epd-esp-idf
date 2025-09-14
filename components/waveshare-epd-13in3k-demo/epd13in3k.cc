@@ -1,12 +1,12 @@
 /* Includes ------------------------------------------------------------------*/
-#include "DEV_Config.h"
-#include "EPD.h"
-#include "GUI_Paint.h"
+#include "waveshare-epd/DEV_Config.h"
+#include "epd-13in3k/epd-13in3k.h"
+#include "waveshare-epd/GUI_Paint.h"
 #include "imagedata.h"
 #include <stdlib.h>
 
 /* Entry point ----------------------------------------------------------------*/
-void setup()
+void epd_13in3k_demo()
 {
     printf("EPD_13IN3K_test Demo\r\n");
     DEV_Module_Init();
@@ -68,8 +68,8 @@ void setup()
     Paint_DrawNum(10, 33, 123456789, &Font12, BLACK, WHITE);
     Paint_DrawNum(10, 50, 987654321, &Font16, WHITE, BLACK);
 
-    Paint_DrawString_CN(130, 0,"你好abc", &Font12CN, BLACK, WHITE);
-    Paint_DrawString_CN(130, 20, "微雪电子", &Font24CN, WHITE, BLACK);
+    //Paint_DrawString_CN(130, 0,"你好abc", &Font12CN, BLACK, WHITE);
+    //Paint_DrawString_CN(130, 20, "微雪电子", &Font24CN, WHITE, BLACK);
 
     Paint_DrawCircle(200, 310, 90, BLACK, DOT_PIXEL_1X1, DRAW_FILL_EMPTY);
     Paint_DrawCircle(200, 310, 40, BLACK, DOT_PIXEL_1X1, DRAW_FILL_FULL);
@@ -157,11 +157,11 @@ void setup()
     Paint_DrawString_EN(10, 20, "hello world", &Font12, GRAY3, GRAY1);
     Paint_DrawNum(10, 33, 123456789, &Font12, GRAY4, GRAY2);
     Paint_DrawNum(10, 50, 987654321, &Font16, GRAY1, GRAY4);
-    Paint_DrawString_CN(150, 0,"你好abc", &Font12CN, GRAY4, GRAY1);
-    Paint_DrawString_CN(150, 20,"你好abc", &Font12CN, GRAY3, GRAY2);
-    Paint_DrawString_CN(150, 40,"你好abc", &Font12CN, GRAY2, GRAY3);
-    Paint_DrawString_CN(150, 60,"你好abc", &Font12CN, GRAY1, GRAY4);
-    Paint_DrawString_CN(10, 130, "微雪电子", &Font24CN, GRAY1, GRAY4);
+    // Paint_DrawString_CN(150, 0,"你好abc", &Font12CN, GRAY4, GRAY1);
+    // Paint_DrawString_CN(150, 20,"你好abc", &Font12CN, GRAY3, GRAY2);
+    // Paint_DrawString_CN(150, 40,"你好abc", &Font12CN, GRAY2, GRAY3);
+    // Paint_DrawString_CN(150, 60,"你好abc", &Font12CN, GRAY1, GRAY4);
+    // Paint_DrawString_CN(10, 130, "微雪电子", &Font24CN, GRAY1, GRAY4);
     EPD_13IN3K_4GrayDisplay(BlackImage);
     DEV_Delay_ms(3000);
 
