@@ -31,7 +31,11 @@
 #ifndef __EPD_13IN3K_H_
 #define __EPD_13IN3K_H_
 
-#include "DEV_Config.h"
+#include "waveshare-epd/DEV_Config.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 // Display resolution
 #define EPD_13IN3K_WIDTH       960
@@ -49,5 +53,9 @@ void EPD_13IN3K_WritePicture_Base(UBYTE *Image, UBYTE Block);
 void EPD_13IN3K_Display_Part(UBYTE *Image, UWORD x, UWORD y, UWORD w, UWORD l);
 void EPD_13IN3K_4GrayDisplay(UBYTE *Image);
 void EPD_13IN3K_Sleep(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

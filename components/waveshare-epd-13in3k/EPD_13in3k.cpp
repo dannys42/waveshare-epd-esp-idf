@@ -28,8 +28,8 @@
 # THE SOFTWARE.
 #
 ******************************************************************************/
-#include "EPD_13in3k.h"
-#include "Debug.h"
+#include "epd-13in3k/epd-13in3k.h"
+#include "waveshare-epd/Debug.h"
 
 const unsigned char Lut_Partial[]={										
 0x15,	0x00,	0x00,	0x00,	0x00,	0x00,	0x00,	0x00,	0x00,	0x00,	

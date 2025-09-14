@@ -1,3 +1,5 @@
 idf_component_register(SRCS
     "EPD_13in3k.cpp"
-    INCLUDE_DIRS "include")
+    INCLUDE_DIRS "include"
+    REQUIRES "waveshare-epd"
+    )
