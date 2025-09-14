@@ -27,7 +27,7 @@
 # THE SOFTWARE.
 #
 ******************************************************************************/
-#include "waveshare-epd/DEV_Config.h"
+#include "epd/DEV_Config.h"
 #include "driver/gpio.h"
 #include "hal/gpio_types.h"
 #include "soc/gpio_num.h"

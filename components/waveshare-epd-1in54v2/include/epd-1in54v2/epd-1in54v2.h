@@ -30,7 +30,7 @@
 #ifndef __EPD_1IN54_V2_H_
 #define __EPD_1IN54_V2_H_
 
-#include "waveshare-epd/DEV_Config.h"
+#include "epd/DEV_Config.h"
 
 #ifdef __cplusplus
 extern "C" {

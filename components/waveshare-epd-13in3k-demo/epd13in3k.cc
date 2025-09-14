@@ -1,7 +1,7 @@
 /* Includes ------------------------------------------------------------------*/
-#include "waveshare-epd/DEV_Config.h"
+#include "epd/DEV_Config.h"
 #include "epd-13in3k/epd-13in3k.h"
-#include "waveshare-epd/GUI_Paint.h"
+#include "epd/GUI_Paint.h"
 #include "imagedata.h"
 #include <stdlib.h>
 

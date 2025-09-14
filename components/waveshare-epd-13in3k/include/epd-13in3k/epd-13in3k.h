@@ -31,7 +31,7 @@
 #ifndef __EPD_13IN3K_H_
 #define __EPD_13IN3K_H_
 
-#include "waveshare-epd/DEV_Config.h"
+#include "epd/DEV_Config.h"
 
 #ifdef __cplusplus
 extern "C" {

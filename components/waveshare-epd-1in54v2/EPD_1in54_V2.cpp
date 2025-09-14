@@ -28,7 +28,7 @@
 #
 ******************************************************************************/
 #include "epd-1in54v2/epd-1in54v2.h"
-#include "waveshare-epd/Debug.h"
+#include "epd/Debug.h"
 
 // waveform full refresh
 unsigned char WF_Full_1IN54[159] =
