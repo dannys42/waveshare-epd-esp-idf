@@ -5,6 +5,8 @@
 #include "imagedata.h"
 #include <stdlib.h>
 
+#include "epd-13in3k-demo/epd-13in3k-demo.h"
+
 /* Entry point ----------------------------------------------------------------*/
 void epd_13in3k_demo()
 {
