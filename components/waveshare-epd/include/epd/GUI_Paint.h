@@ -79,7 +79,8 @@
 #define __GUI_PAINT_H
 
 #include "DEV_Config.h"
-#include "fonts/stm32xx_fonts-en.h"
+#include "fonts/fonts-en.h"
+#include "fonts/fonts-cn.h"
 
 /**
  * Image attributes

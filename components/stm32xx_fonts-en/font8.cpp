@@ -36,7 +36,7 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "fonts/stm32xx_fonts-en.h"
+#include "fonts/fonts-en.h"
 
 // 
 //  Font data for Courier New 12pt

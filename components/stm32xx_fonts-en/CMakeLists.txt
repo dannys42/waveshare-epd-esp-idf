@@ -4,4 +4,5 @@ idf_component_register(SRCS
     "font20.cpp"
     "font24.cpp"
     "font8.cpp"
-    INCLUDE_DIRS "include")
+    INCLUDE_DIRS "include"
+    )

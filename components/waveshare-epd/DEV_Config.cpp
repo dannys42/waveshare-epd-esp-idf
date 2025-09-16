@@ -72,6 +72,9 @@ int digitalRead(int __pin) {
 
 void GPIO_Config(void)
 {
+    pinMode(11, OUTPUT);
+    digitalWrite(11, HIGH);
+
     /*
     // transition to this...
     gpio_reset_pin(BLINK_GPIO);
