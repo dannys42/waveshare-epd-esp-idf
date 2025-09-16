@@ -43,4 +43,12 @@ menu "Waveshare Epaper"
     help
         BUSY GPIO Pin number
 
+    config WAVESHARE_EPAPER_GPIO_POWER_ENABLE
+    default -1
+    int "Power Enable GPIO (-1 for no power enable pin)"
+    range -1 100
+    help
+        Waveshare E-Paper Driver HAT v2.3+ has a Power Enable line that turns on/off the voltage regulator into the display.
+        https://www.waveshare.com/product/displays/e-paper/epaper-1/13.3inch-e-paper-hat-k.htm
+
 endmenu

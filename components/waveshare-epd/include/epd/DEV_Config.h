@@ -106,5 +106,7 @@ void GPIO_Mode(UWORD GPIO_Pin, UWORD Mode);
 void DEV_SPI_WriteByte(UBYTE data);
 UBYTE DEV_SPI_ReadByte();
 void DEV_SPI_Write_nByte(UBYTE *pData, UDOUBLE len);
+void DEV_PowerOn();
+void DEV_PowerOff();
 
 #endif

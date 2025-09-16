@@ -72,20 +72,15 @@ int digitalRead(int __pin) {
 
 void GPIO_Config(void)
 {
-    pinMode(11, OUTPUT);
-    digitalWrite(11, HIGH);
-
-    /*
-    // transition to this...
-    gpio_reset_pin(BLINK_GPIO);
-    // Set the GPIO as a push/pull output
-    gpio_set_direction(BLINK_GPIO, GPIO_MODE_OUTPUT);
-    */
+#if CONFIG_WAVESHARE_EPAPER_GPIO_POWER_ENABLE >= 0
+    pinMode(CONFIG_WAVESHARE_EPAPER_GPIO_POWER_ENABLE, OUTPUT);
+    DEV_PowerOff();
+#endif
 
     pinMode(EPD_BUSY_PIN,  INPUT);
     pinMode(EPD_RST_PIN , OUTPUT);
     pinMode(EPD_DC_PIN  , OUTPUT);
-    
+
     pinMode(EPD_SCK_PIN, OUTPUT);
     pinMode(EPD_MOSI_PIN, OUTPUT);
     pinMode(EPD_CS_PIN , OUTPUT);
@@ -172,3 +167,18 @@ void DEV_SPI_Write_nByte(UBYTE *pData, UDOUBLE len)
     for (int i = 0; i < len; i++)
         DEV_SPI_WriteByte(pData[i]);
 }
+
+void DEV_PowerOn()
+{
+#if CONFIG_WAVESHARE_EPAPER_GPIO_POWER_ENABLE >= 0
+    digitalWrite(CONFIG_WAVESHARE_EPAPER_GPIO_POWER_ENABLE, HIGH);
+#endif
+}
+
+void DEV_PowerOff()
+{
+#if CONFIG_WAVESHARE_EPAPER_GPIO_POWER_ENABLE >= 0
+    digitalWrite(CONFIG_WAVESHARE_EPAPER_GPIO_POWER_ENABLE, LOW);
+#endif
+}
+

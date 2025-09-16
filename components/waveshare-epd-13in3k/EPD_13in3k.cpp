@@ -80,6 +80,8 @@ parameter:
 ******************************************************************************/
 static void EPD_13IN3K_Reset(void)
 {
+    DEV_PowerOn();
+
     DEV_Digital_Write(EPD_RST_PIN, 1);
     DEV_Delay_ms(100);
     DEV_Digital_Write(EPD_RST_PIN, 0);
@@ -601,4 +603,6 @@ void EPD_13IN3K_Sleep(void)
 	EPD_13IN3K_SendCommand(0x10); //enter deep sleep
 	EPD_13IN3K_SendData(0x03);
 	DEV_Delay_ms(100);
+
+    DEV_PowerOff();
 }
