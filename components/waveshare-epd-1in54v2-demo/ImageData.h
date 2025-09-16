@@ -1,7 +1,7 @@
 /*****************************************************************************
 * | File      	:   ImageData.h
 * | Author      :   Waveshare team
-* | Function    :	
+* | Function    :
 *----------------
 * |	This version:   V1.0
 * | Date        :   2018-10-23

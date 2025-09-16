@@ -50,11 +50,11 @@
 
 //ASCII
 typedef struct _tFont
-{    
+{
   const uint8_t *table;
   uint16_t Width;
   uint16_t Height;
-  
+
 } sFONT;
 
 extern sFONT Font24;
@@ -70,8 +70,8 @@ extern const unsigned char Font16_Table[];
 #ifdef __cplusplus
 }
 #endif
-  
+
 #endif /* __STM32XX_FONTS_EN_H */
- 
+
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

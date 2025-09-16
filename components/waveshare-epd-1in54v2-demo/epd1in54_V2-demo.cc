@@ -27,8 +27,8 @@ void epd_1in54_v2_demo()
     }
     printf("Paint_NewImage\r\n");
     Paint_NewImage(BlackImage, EPD_1IN54_V2_WIDTH, EPD_1IN54_V2_HEIGHT, 270, WHITE);
-    
-#if 1   //show image for array    
+
+#if 1   //show image for array
     printf("show image for array\r\n");
     Paint_SelectImage(BlackImage);
     Paint_Clear(WHITE);
@@ -70,7 +70,7 @@ void epd_1in54_v2_demo()
     DEV_Delay_ms(2000);
 #endif
 
-#if 1   //Partial refresh, example shows time    
+#if 1   //Partial refresh, example shows time
 
     // The image of the previous frame must be uploaded, otherwise the
     // first few seconds will display an exception.

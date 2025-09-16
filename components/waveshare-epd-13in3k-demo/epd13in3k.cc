@@ -28,8 +28,8 @@ void epd_13in3k_demo()
     Paint_NewImage(BlackImage, EPD_13IN3K_WIDTH, EPD_13IN3K_HEIGHT, 0, WHITE);
 	Paint_Clear(WHITE);
 
-#if 1  //show image for array  
-    Paint_NewImage(BlackImage, EPD_13IN3K_WIDTH, EPD_13IN3K_HEIGHT, 0, WHITE);  
+#if 1  //show image for array
+    Paint_NewImage(BlackImage, EPD_13IN3K_WIDTH, EPD_13IN3K_HEIGHT, 0, WHITE);
     printf("show image for array\r\n");
     Paint_SelectImage(BlackImage);
     Paint_Clear(WHITE);
@@ -40,12 +40,12 @@ void epd_13in3k_demo()
 #endif
 
 #if 1  // Drawing on the image
-	Paint_NewImage(BlackImage, EPD_13IN3K_WIDTH, EPD_13IN3K_HEIGHT, 0, WHITE);  	
+	Paint_NewImage(BlackImage, EPD_13IN3K_WIDTH, EPD_13IN3K_HEIGHT, 0, WHITE);
     printf("Drawing\r\n");
     //1.Select Image
     Paint_SelectImage(BlackImage);
     Paint_Clear(WHITE);
-	
+
     // 2.Drawing on the image
     printf("Drawing:BlackImage\r\n");
     Paint_DrawPoint(10, 80, BLACK, DOT_PIXEL_1X1, DOT_STYLE_DFT);
@@ -75,17 +75,17 @@ void epd_13in3k_demo()
 
     Paint_DrawCircle(200, 310, 90, BLACK, DOT_PIXEL_1X1, DRAW_FILL_EMPTY);
     Paint_DrawCircle(200, 310, 40, BLACK, DOT_PIXEL_1X1, DRAW_FILL_FULL);
-	
+
     Paint_DrawCircle(480, 480, 150, BLACK, DOT_PIXEL_1X1, DRAW_FILL_FULL);
     Paint_DrawCircle(480, 480, 110, WHITE, DOT_PIXEL_1X1, DRAW_FILL_FULL);
 
     Paint_DrawCircle(750, 270, 100, BLACK, DOT_PIXEL_1X1, DRAW_FILL_EMPTY);
     Paint_DrawCircle(750, 270, 70, BLACK, DOT_PIXEL_1X1, DRAW_FILL_FULL);
-	
+
     Paint_DrawLine(200, 310, 480, 480, BLACK, DOT_PIXEL_3X3, LINE_STYLE_DOTTED);
     Paint_DrawLine(480, 480, 750, 270, BLACK, DOT_PIXEL_3X3, LINE_STYLE_DOTTED);
-    Paint_DrawLine(750, 270, 200, 310, BLACK, DOT_PIXEL_3X3, LINE_STYLE_SOLID);	
-	
+    Paint_DrawLine(750, 270, 200, 310, BLACK, DOT_PIXEL_3X3, LINE_STYLE_SOLID);
+
     EPD_13IN3K_Display_Base(BlackImage);
     DEV_Delay_ms(3000);
 #endif
@@ -93,10 +93,10 @@ void epd_13in3k_demo()
 #if 1
     printf("Partial refresh\r\n");
     // If you didn't use the EPD_13IN3K_Display_Base() function to refresh the image before,
-    // use the EPD_13IN3K_color_Base() function to refresh the background color, 
-    // otherwise the background color will be garbled 
+    // use the EPD_13IN3K_color_Base() function to refresh the background color,
+    // otherwise the background color will be garbled
     EPD_13IN3K_Init_Part();
-    // EPD_13IN3K_color_Base(WHITE);   
+    // EPD_13IN3K_color_Base(WHITE);
 	printf("Partial refresh\r\n");
     Paint_NewImage(BlackImage, 200, 50, 0, WHITE);
 	PAINT_TIME sPaint_time;
@@ -129,7 +129,7 @@ void epd_13in3k_demo()
 		}
     }
 #endif
-    
+
 #if 1 // show image for array
     free(BlackImage);
     printf("show Gray------------------------\r\n");
@@ -143,7 +143,7 @@ void epd_13in3k_demo()
     Paint_NewImage(BlackImage, EPD_13IN3K_WIDTH/2, EPD_13IN3K_HEIGHT/2, 0, WHITE);
     Paint_SetScale(4);
     Paint_Clear(0xff);
-    
+
     Paint_DrawPoint(10, 80, GRAY4, DOT_PIXEL_1X1, DOT_STYLE_DFT);
     Paint_DrawPoint(10, 90, GRAY4, DOT_PIXEL_2X2, DOT_STYLE_DFT);
     Paint_DrawPoint(10, 100, GRAY4, DOT_PIXEL_3X3, DOT_STYLE_DFT);
@@ -172,7 +172,7 @@ void epd_13in3k_demo()
     printf("Clear...\r\n");
     EPD_13IN3K_Init();
     EPD_13IN3K_Clear();
-	
+
     printf("Goto Sleep...\r\n");
     EPD_13IN3K_Sleep();
     free(BlackImage);
