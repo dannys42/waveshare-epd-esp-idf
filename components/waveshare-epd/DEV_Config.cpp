@@ -130,17 +130,17 @@ void DEV_SPI_WriteByte(UBYTE data)
 
     for (int i = 0; i < 8; i++)
     {
-        if ((data & 0x80) == 0) digitalWrite(EPD_MOSI_PIN, GPIO_PIN_RESET); 
+        if ((data & 0x80) == 0) digitalWrite(EPD_MOSI_PIN, GPIO_PIN_RESET);
         else                    digitalWrite(EPD_MOSI_PIN, GPIO_PIN_SET);
 
         data <<= 1;
-        digitalWrite(EPD_SCK_PIN, GPIO_PIN_SET);     
+        digitalWrite(EPD_SCK_PIN, GPIO_PIN_SET);
         digitalWrite(EPD_SCK_PIN, GPIO_PIN_RESET);
     }
 
     //SPI.transfer(data);
     digitalWrite(EPD_CS_PIN, GPIO_PIN_SET);
-    //SPI.endTransaction();	
+    //SPI.endTransaction();
 }
 
 UBYTE DEV_SPI_ReadByte()
@@ -153,8 +153,8 @@ UBYTE DEV_SPI_ReadByte()
         j = j << 1;
         if (digitalRead(EPD_MOSI_PIN))  j = j | 0x01;
         else                            j = j & 0xfe;
-        
-        digitalWrite(EPD_SCK_PIN, GPIO_PIN_SET);     
+
+        digitalWrite(EPD_SCK_PIN, GPIO_PIN_SET);
         digitalWrite(EPD_SCK_PIN, GPIO_PIN_RESET);
     }
     digitalWrite(EPD_CS_PIN, GPIO_PIN_SET);
