@@ -1,5 +1,5 @@
 version: "0.0.1"
-description: "Waveshare E-Paper Display Driver for 1.54in v2 B&W Display (1in54v2)"
+description: "Waveshare E-Paper Display Driver for 13.3in B&W Display (13in3k)"
 url: "https://github.com/dannys42/waveshare-epd-esp-idf"
 tags:
   - "waveshare"

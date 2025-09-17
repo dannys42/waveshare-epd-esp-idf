@@ -1,2 +1,21 @@
+version: "0.0.1"
+description: "Waveshare E-Paper Sample - Core Driver and Graphics library"
+url: "https://github.com/dannys42/waveshare-epd-esp-idf"
+tags:
+  - "waveshare"
+  - "epaper"
+license: MIT
+repository: "https://github.com/dannys42/waveshare-epd-esp-idf"
+files:
+  exclude:
+    - "scripts/*"
 dependencies:
-  idf: '>=5.0'
+  idf:
+    version: ">5.0.0"
+  dannys42/stm32xx_fonts-cn:
+    version: "~0.0.1"
+    registry_url: https://components-staging.espressif.com
+  dannys42/stm32xx_fonts-en:
+    version: "~0.0.1"
+    registry_url: https://components-staging.espressif.com
+
