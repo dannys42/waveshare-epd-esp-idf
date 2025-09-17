@@ -36,7 +36,7 @@ You'll have to update a few `#include` paths and add relevant `CMakeLists.txt` f
 THe components are currently registered in the staging component registry.  To try it out, add the following:
 
 
-To try it out, add to your `idf\_component.yml`:
+To try it out, add to your `idf_component.yml`:
 
 ```yml
   dannys42/waveshare-epd-13in3k-demo:
@@ -44,16 +44,14 @@ To try it out, add to your `idf\_component.yml`:
     registry_url: "https://components-staging.espressif.com"
 ```
 
-`CMakeLists.txt`:
-
-Add to your idf_component_register command:
+In your `CMakeLists.txt`, add to the `idf_component_register` command:
 
 ```
 REQUIRES "waveshare-epd-13in3k-demo"
 ```
 
 
-`main.c`:
+In your `main.c`, call the demo function:
 
 ```c
 #include "epd-13in3k-demo/epd-13in3k-demo.h"
