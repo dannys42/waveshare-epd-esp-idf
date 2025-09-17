@@ -31,6 +31,42 @@ Please consider submitting PR's for other sizes.  See the above as references fo
 You'll have to update a few `#include` paths and add relevant `CMakeLists.txt` files as well.
 
 
+# Try it
+
+THe components are currently registered in the staging component registry.  To try it out, add the following:
+
+
+To try it out, add to your `idf\_component.yml`:
+
+```yml
+  dannys42/waveshare-epd-13in3k-demo:
+    version: "^0.0.1"
+    registry_url: "https://components-staging.espressif.com"
+```
+
+`CMakeLists.txt`:
+
+Add to your idf_component_register command:
+
+```
+REQUIRES "waveshare-epd-13in3k-demo"
+```
+
+
+`main.c`:
+
+```c
+#include "epd-13in3k-demo/epd-13in3k-demo.h"
+
+
+void app_main(void)
+{
+    epd_13in3k_demo();
+}
+
+```
+
+
 # References
 
 * [Original Waveshare Sample code](https://github.com/waveshareteam/e-Paper)
