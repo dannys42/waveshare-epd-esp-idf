@@ -2,7 +2,7 @@ name: Push component to https://components.espressif.com
 on:
   push:
     tags:
-      - [0-9]+\.[0-9]+\.[0-9]+.*
+      - "[0-9]+.[0-9]+.[0-9]+"
 jobs:
   upload_components:
     permissions:
