@@ -14,4 +14,4 @@ dependencies:
     version: ">5.0.0"
   dannys42/waveshare-epd-13in3k:
     version: "~0.0.1"
-    registry_url: https://components-staging.espressif.com
+    registry_url: https://components.espressif.com

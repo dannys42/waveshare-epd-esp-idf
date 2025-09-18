@@ -14,8 +14,8 @@ dependencies:
     version: ">5.0.0"
   dannys42/stm32xx_fonts-cn:
     version: "~0.0.1"
-    registry_url: https://components-staging.espressif.com
+    registry_url: https://components.espressif.com
   dannys42/stm32xx_fonts-en:
     version: "~0.0.1"
-    registry_url: https://components-staging.espressif.com
+    registry_url: https://components.espressif.com
 
