@@ -1,0 +1,27 @@
+name: Push component to https://components.espressif.com
+on:
+  push:
+    tags:
+      - [0-9]+\.[0-9]+\.[0-9]+.*
+jobs:
+  upload_components:
+    permissions:
+      id-token: write # IMPORTANT: Required to generate an OIDC Token
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: "recursive"
+      - name: Upload components to the component registry
+        uses: espressif/upload-components-ci-action@v2
+        with:
+          components: |
+            components/stm32xx_fonts-cn
+            components/stm32xx_fonts-en
+            components/waveshare-epd
+            components/waveshare-epd-13in3k
+            components/waveshare-epd-13in3k-demo
+            components/waveshare-epd-1in54v2
+            components/waveshare-epd-1in54v2-demo
+          namespace: "espressif"
+          api_token: ${{ secrets.IDF_COMPONENT_API_TOKEN }}
