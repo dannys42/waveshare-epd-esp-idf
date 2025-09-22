@@ -38,6 +38,10 @@
 #include <driver/gpio.h>
 #include <freertos/idf_additions.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * data
 **/
@@ -108,5 +112,9 @@ UBYTE DEV_SPI_ReadByte();
 void DEV_SPI_Write_nByte(UBYTE *pData, UDOUBLE len);
 void DEV_PowerOn();
 void DEV_PowerOff();
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

@@ -1,4 +1,4 @@
-version: "0.0.1"
+version: "0.0.2"
 description: "Waveshare E-Paper Display Driver for 1.54in v2 B&W Display (1in54v2)"
 url: "https://github.com/dannys42/waveshare-epd-esp-idf"
 tags:
@@ -13,5 +13,5 @@ dependencies:
   idf:
     version: ">5.0.0"
   dannys42/waveshare-epd:
-    version: "~0.0.1"
+    version: "~0.0.2"
     registry_url: https://components.espressif.com
