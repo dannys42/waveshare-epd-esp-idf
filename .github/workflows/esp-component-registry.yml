@@ -1,4 +1,4 @@
-name: Push component to https://components.espressif.com
+name: Push to components.espressif.com
 on:
   push:
     tags:
