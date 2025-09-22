@@ -1,4 +1,4 @@
-version: "0.0.2"
+version: "0.0.3"
 description: "Waveshare E-Paper Sample - Chinese Fonts"
 url: "https://github.com/dannys42/waveshare-epd-esp-idf"
 tags:
