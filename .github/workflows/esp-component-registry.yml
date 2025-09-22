@@ -30,3 +30,4 @@ jobs:
             components/waveshare-epd-1in54v2
             components/waveshare-epd-1in54v2-demo
           namespace: "espressif"
+          api_token: ${{ secrets.IDF_COMPONENT_API_TOKEN }}
