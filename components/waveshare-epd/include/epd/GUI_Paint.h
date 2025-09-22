@@ -83,7 +83,7 @@
 #include "fonts/fonts-cn.h"
 
 #ifdef __cplusplus
-    extern "C" {
+extern "C" {
 #endif
 
 /**
@@ -221,7 +221,7 @@ void Paint_DrawBitMap(const unsigned char* image_buffer);
 void Paint_DrawImage(const unsigned char *image_buffer, UWORD xStart, UWORD yStart, UWORD W_Image, UWORD H_Image);
 
 #ifdef __cplusplus
-    extern "C" {
+}
 #endif
 
 #endif
