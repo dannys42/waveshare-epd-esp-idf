@@ -82,7 +82,7 @@
 #include "fonts/fonts-en.h"
 #include "fonts/fonts-cn.h"
 
-#ifdef __cpluspus
+#ifdef __cplusplus
     extern "C" {
 #endif
 
@@ -220,7 +220,7 @@ void Paint_DrawTime(UWORD Xstart, UWORD Ystart, PAINT_TIME *pTime, sFONT* Font, 
 void Paint_DrawBitMap(const unsigned char* image_buffer);
 void Paint_DrawImage(const unsigned char *image_buffer, UWORD xStart, UWORD yStart, UWORD W_Image, UWORD H_Image);
 
-#ifdef __cpluspus
+#ifdef __cplusplus
     extern "C" {
 #endif
 
